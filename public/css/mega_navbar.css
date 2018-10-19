@@ -1,0 +1,101 @@
+
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-nav {
+	background-color: #e5e5e5;
+	margin: 0 15px;
+    padding: 0px;
+    color: #404040;
+}
+
+.mega-nav ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+	list-style: none;
+}
+
+.mega-nav > ul > li {
+	display: inline-block;
+  	font-size: 14px;
+  	padding: 15px 15px;
+  	position: relative;
+  	border-bottom: 3px solid transparent;
+}
+
+.mega-nav > ul > li:first-child {padding-left: 0;}
+.mega-nav > ul > li:last-child {padding-right: 0;}
+.mega-nav > ul > li > a {
+	color: #404040;
+    font-weight: bold;
+    text-decoration: none;
+    text-decoration-line: none;
+  	display: block;
+  	position: relative;
+  	padding: 0px 15px;
+    width:100%;
+    height: 100%;
+}
+
+.mega-nav > ul > li:hover {
+	background-color: #FFFFFF;	
+}
+
+.mega-menu {
+	background: white;
+  	display: none;
+    top: 50px;
+    padding: 40px 20px;
+    left: 0;
+  	position: absolute;
+  	text-align: left;
+  	width: 100%;
+    z-index: 1000;
+}
+.mega-menu h3 {
+	color: #444444;
+	font-size: 15px;
+}
+
+.mega-menu ul {
+	float: left;
+  	margin-bottom: 20px;
+  	margin-right: 40px;
+  	width: 205px;
+}
+
+.mega-menu ul:last-child {
+    margin-right: 0;
+}
+
+.mega-menu a {
+	color: #404040;
+  	display: block;
+	padding: 3px 0;
+	text-decoration: none;
+    text-decoration-line: none;
+}
+
+.mega-nav .droppable {
+    position: static;
+}
+
+.mega-nav .droppable > a:after {
+	padding-left: 6px;
+  	position: relative;
+  	top: -1px;
+}
+
+.mega-nav .droppable:hover .mega-menu {
+    display: block;
+}
+
+.mega-nav .cf:before,
+.mega-nav .cf:after {
+	content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.mega-nav .cf:after {
+    clear: both;
+}
